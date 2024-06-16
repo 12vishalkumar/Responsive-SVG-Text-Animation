@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background: #111; */
+    background: rgb(90, 91, 92);
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+.yourName {
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 20px;
+    font-size: 22px;
+    width: 90%;
+    max-width: 450px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.yourName:focus {
+    outline: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    /* background-color: transparent; */
+    background-color: #641ae2;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: rgb(25, 6, 131);
+}
+
+.svg-container {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+text {
+    font-size: 15vw;
+}
+
+.copy {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3px;
+    stroke-dasharray: 8% 30%;
+    stroke-dashoffset: 0%;
+    animation: textanimation 6s linear infinite;
+}
+
+@keyframes textanimation {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+.copy1 {
+    stroke: #673ab7;
+    animation-delay: -1s;
+}
+
+.copy2 {
+    stroke: #e91e63;
+    animation-delay: -2s;
+}
+
+.copy3 {
+    stroke: #ff5722;
+    animation-delay: -3s;
+}
+
+.copy4 {
+    stroke: #f44336;
+    animation-delay: -4s;
+}
+
+.copy5 {
+    stroke: #ffc107;
+    animation-delay: -5s;
+}
+
+@media (max-width: 700px) {
+    .yourName {
+        font-size: 18px;
+        width: 90%;
+    }
+    .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .yourName {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+}
